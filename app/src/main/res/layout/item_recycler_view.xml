@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    android:background="@color/white"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:id="@+id/round_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/round_shape"
+            />
+
+        <TextView
+            android:id="@+id/tv_recycler_view_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/round_view"
+            android:text="Hello This is berberber"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_recycler_view_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_recycler_view_1"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/round_view"
+            android:text="hello wolrd"/>
+
+        <TextView
+            android:id="@+id/tv_recycler_view_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_recycler_view_2"
+            android:layout_toRightOf="@id/round_view"
+            android:layout_marginTop="4dp"
+            android:text="Berberberberber"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
