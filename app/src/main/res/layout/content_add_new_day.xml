@@ -56,15 +56,19 @@
                 android:layout_marginEnd="12dp"
                 android:layout_marginRight="12dp"
                 android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/ic_description_pink_500_24dp" />
 
             <TextView
                 android:id="@+id/tv_description"
-                android:layout_width="wrap_content"
+                android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_title"
-                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
                 android:ellipsize="end"
+                android:maxLines="1"
                 android:text="Description"
                 android:textColor="@color/pink_primary"
                 android:textSize="15sp" />
@@ -79,6 +83,7 @@
                 android:layout_marginEnd="12dp"
                 android:layout_marginRight="12dp"
                 android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/ic_description_pink_500_24dp" />
 
             <TextView
@@ -87,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_description"
                 android:layout_margin="8dp"
-                android:text="From"
+                android:text="Data From:"
                 android:textColor="@color/pink_primary"
                 android:textSize="15sp" />
 
@@ -101,6 +106,7 @@
                 android:layout_marginEnd="12dp"
                 android:layout_marginRight="12dp"
                 android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/ic_date_range_pink_500_24dp" />
 
             <TextView
@@ -109,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_data_from"
                 android:layout_margin="8dp"
-                android:text="To"
+                android:text="Data To:"
                 android:textColor="@color/pink_primary"
                 android:textSize="15sp" />
 
@@ -123,6 +129,7 @@
                 android:layout_marginEnd="12dp"
                 android:layout_marginRight="12dp"
                 android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/ic_date_range_pink_500_24dp" />
 
 
@@ -134,11 +141,13 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_below="@id/card_view_properties_ll"
-            android:layout_marginLeft="80dp"
             android:layout_marginRight="20dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:text="ok" />
+            android:text="ok"
+            android:textColor="@color/purple_primary"/>
 
 
         <Button
@@ -147,9 +156,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/card_view_properties_ll"
-            android:layout_toRightOf="@id/btn_cancel"
+            android:layout_toLeftOf="@id/btn_cancel"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:text="cancel" />
+            android:text="cancel"
+            android:textColor="@color/purple_primary"/>
 
 
     </RelativeLayout>
