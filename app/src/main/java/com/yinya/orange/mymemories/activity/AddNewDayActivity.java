@@ -136,8 +136,8 @@ public class AddNewDayActivity extends AppCompatActivity implements View.OnClick
                     @Override
                     public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
                         Logger.e(i + " " + i1 + " " + i2);
-                        String dataFrom = i + "-" + i1 + "-" + i2;
-                        tv_data_from.setText(tv_data_from.getText() + " " + dataFrom);
+                        String dataFrom = i + "-" + (i1+1) + "-" + i2;
+                        tv_data_from.setText("Data from: " + dataFrom);
                     }
                 }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
                 dateFromPickerDialog.show();
@@ -147,8 +147,8 @@ public class AddNewDayActivity extends AppCompatActivity implements View.OnClick
                     @Override
                     public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
                         Logger.e(i + " " + i1 + " " + i2);
-                        String dataFrom = i + "-" + i1 + "-" + i2;
-                        tv_data_to.setText(tv_data_from.getText() + " " + dataFrom);
+                        String dataFrom = i + "-" + (i1+1) + "-" + i2;
+                        tv_data_to.setText("Data to: " + dataFrom);
                     }
                 }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
                 dateEndPickerDialog.show();
