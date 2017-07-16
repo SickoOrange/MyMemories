@@ -5,7 +5,8 @@
         <item
             android:id="@+id/nav_anniversary"
             android:icon="@drawable/ic_event_black_24dp"
-            android:title="Anniversary countdown" />
+            android:title="Anniversary countdown"
+            android:checked="true"/>
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
